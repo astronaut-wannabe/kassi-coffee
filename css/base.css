@@ -14,8 +14,8 @@
 }
 
 .site-main > img {
-  width: 40em;
-  max-width: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 @media screen and (min-width: var(--query__small)) {
     .site-main, .site-main img {
