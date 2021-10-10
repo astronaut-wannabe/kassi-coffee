@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  margin: 0 2rem;
+  margin: 0 10rem;
   grid-template-columns: 3fr 6fr 3fr;
   grid-gap: 2rem 1rem;
   grid-template-areas:
@@ -135,3 +135,11 @@ footer {
   #cafe-merch img { max-width: 30vw; }
   .cafe-map { max-width: 100vw; }
 }
+
+.cafe-languages__item a img {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* GLOBE: 🌏
+   MAIL:  📨*/
