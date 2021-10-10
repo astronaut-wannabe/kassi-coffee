@@ -108,10 +108,12 @@ footer {
 
 
 @media all and (max-width: 540px) {
+  body { margin: 0; }
   .container {
-    margin: 0 10px;
+    margin: 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    grid-gap: 2rem 0;
     grid-template-areas:
       "header"
       "navigation"
@@ -131,4 +133,5 @@ footer {
   nav { justify-self: center; }
   #cafe-languages { justify-self: center; }
   #cafe-merch img { max-width: 30vw; }
+  .cafe-map { max-width: 100vw; }
 }
