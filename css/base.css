@@ -103,3 +103,32 @@ footer {
   max-width: 30vw;
   height: auto;
 }
+
+
+
+
+@media all and (max-width: 540px) {
+  .container {
+    margin: 0 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "navigation"
+      "languages"
+      "menu"
+      "merch"
+      "contact"
+      "copyright";
+  }
+
+  header { height: auto; }
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+  nav { justify-self: center; }
+  #cafe-languages { justify-self: center; }
+  #cafe-merch img { max-width: 30vw; }
+}
