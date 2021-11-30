@@ -1,145 +1,16 @@
-/* This sets up the grid we will use to lay out the page */
-
-.container {
-  display: grid;
-  margin: 0 10rem;
-  grid-template-columns: 3fr 6fr 3fr;
-  grid-gap: 2rem 1rem;
-  grid-template-areas:
-    "header header header"
-    "navigation navigation languages"
-    ". menu ."
-    ". merch ."
-    ". contact ."
-    ". copyright .";
+.location a {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+  transition: color 0.3;s
 }
 
-/* The below section lays out all of the individual sections onto the
-   grid */
-
-header {
-  /* background-color: blue; */
-  height: 25rem;
-  grid-area: header;
-  align-self: center;
-  display: flex;
-  justify-content: center;
+.location a:hover,
+.location a:focus {
+  text-decoration: none;
+  background-size: 100% 4px;
 }
-
-nav {
-  /* background-color: red; */
-  height: 30px;
-  grid-area: navigation;
-  align-self: center;
-  justify-self: left;
-}
-
-#cafe-languages {
-  /* background-color: purple; */
-  grid-area: languages;
-  justify-self: right;
-}
-
-#cafe-menu {
-  /* background-color: green; */
-  height: 120px;
-  grid-area: menu;
-  justify-self: center;
-  text-align: center;
-}
-
-#cafe-merch {
-  /* background-color: pink; */
-  grid-area: merch;
-  justify-self: center;
-}
-
-#cafe-merch h2 { text-align: center; }
-#cafe-merch img {
-  max-width: 15vw;
-  height: auto;
-}
-
-#cafe-contact {
-  /*   background-color: orange; */
-  grid-area: contact;
-  justify-self: center;
-  text-align: center;
-}
-
-footer {
-  grid-area: copyright;
-  justify-self: center;
-}
-
-
-/* Styling for the actual menus */
-
-#cafe-nav ul,
-#cafe-languages ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.cafe-nav__item,
-.cafe-languages__item {
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.1rem;
-  margin-right: 0.5rem;
-}
-.cafe-languages__item {
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.1rem;
-  margin-right: 0.5rem;
-}
-
-/* Styling for the contents of the contact section */
-
-#cafe-contact h2 { text-align: center; }
-.cafe-map {
-  max-width: 30vw;
-  height: auto;
-}
-
-
-
-
-@media all and (max-width: 540px) {
-  body { margin: 0; }
-  .container {
-    margin: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 2rem 0;
-    grid-template-areas:
-      "header"
-      "navigation"
-      "languages"
-      "menu"
-      "merch"
-      "contact"
-      "copyright";
-  }
-
-  header { height: auto; }
-  header img {
-    width: 100%;
-    height: auto;
-  }
-
-  nav { justify-self: center; }
-  #cafe-languages { justify-self: center; }
-  #cafe-merch img { max-width: 30vw; }
-  .cafe-map { max-width: 100vw; }
-}
-
-.cafe-languages__item a img {
-  width: 4rem;
-  height: 4rem;
-}
-
-/* GLOBE: 🌏
-   MAIL:  📨*/
