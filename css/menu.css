@@ -73,7 +73,6 @@ header {
   font-size: 2.5rem;
   border: 6px solid #04110f;
   border-width: 6px 6px 0;
-  color: #dec022;
   text-align: center;
   grid-column: span 3;
   background:  #e2dccc;
@@ -173,6 +172,10 @@ header {
   display: flex;
   flex-flow: row;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
 }
 @media (min-width: 880px) {
   .legend {
@@ -190,6 +193,17 @@ header {
 .legend__item {
   display: block;
   background: #e2dccc;
+}
+.languages .legend__item {
+  display: block;
+  background: none;
+  height: 3em;
+  padding-right: 5px;
+  margin-top: 2px;
+}
+.languages .legend__item img {
+  width: 100%;
+  height: 100%;
 }
 .legend__item span {
   display: inline-block;
