@@ -38,11 +38,11 @@ span.allergen {
   height: 30px;
   text-align: center;
   font: 800 0.8rem Syncopate;
-  padding-top: 7px;
-  color: #e2dccc;
-  background: #00acc1;
+  padding-top: 4px;
   border: 2px solid #04110f;
   margin-top: 4px;
+  color: green;
+  background: #fdffff;
 }
 span.allergen:not(:first-child) {
   margin-left: -2px;
@@ -87,7 +87,10 @@ header {
 @media (min-width: 550px) {
   .name {
     grid-column: span 1;
-    background: #04110f;
+    border-right: none;
+    padding-left: 17px;
+    padding-bottom: 17px;
+    padding-top: 17px;
   }
 }
 .name span {
@@ -95,11 +98,11 @@ header {
 }
 
 .opening-hours {
+  background: ##e2dccc;
+  color: #111010;
   border: 6px solid #04110f;
   border-width: 6px 6px 0;
   grid-column: span 3;
-  background: #6f7bd0;
-  color: #e2dccc;
   padding: 1rem 1.6rem;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -126,13 +129,13 @@ header {
 }
 
 .location {
-  border: 6px solid #04110f;
-  border-width: 6px 6px 0;
   grid-column: 1/-1;
-  background: #04110f;
   color: #e2dccc;
   text-align: center;
   padding: 0.6rem;
+  border: 1px solid #04110f;
+  border-width: 6px 6px 0px 3px;
+  background: #949c9d;
 }
 .location p:nth-child(1) {
   font-family: Syncopate;
@@ -205,15 +208,15 @@ header {
   font-weight: 700;
   text-align: center;
   line-height: 2.3;
-  color: #e2dccc;
   border: 6px solid #04110f;
   border-width: 0 6px;
+  color: #2f2f2f;
 }
 .legend__item:nth-child(1) {
-  color: #00acc1;
+  color: #fff;
 }
 .legend__item:nth-child(1) i {
-  background: #00acc1;
+  background: #fff;
 }
 .legend__item:nth-child(2) {
   color: #931a47;
