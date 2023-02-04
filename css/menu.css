@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #e2dccc;
+  background: #fff;
   font-family: "Mclaren", sans-serif;
   font-weight: 300;
   line-height: 1.2;
@@ -19,8 +19,8 @@ h3 {
   font-family: Syncopate, sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  background: #dec022;
-  color: #04110f;
+  background: #000;
+  color: #fff;
   letter-spacing: 0.2rem;
   padding: 1rem 2rem;
   text-transform: uppercase;
@@ -75,13 +75,13 @@ header {
   border-width: 6px 6px 0;
   text-align: center;
   grid-column: span 3;
-  background:  #e2dccc;
+  background:  #fff;
   justify-content: center;
 }
 .name img {
   width: 100%;
   height: auto;
-  background:  #e2dccc;
+  background:  #fff;
 }
 @media (min-width: 550px) {
   .name {
@@ -97,7 +97,7 @@ header {
 }
 
 .opening-hours {
-  background: ##e2dccc;
+  background: ##fff;
   color: #111010;
   border: 6px solid #04110f;
   border-width: 6px 6px 0;
@@ -107,6 +107,7 @@ header {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  text-align: center;
   line-height: 1.1;
 }
 @media (min-width: 550px) {
@@ -129,11 +130,11 @@ header {
 
 .location {
   grid-column: 1/-1;
-  color: #e2dccc;
+  color: #fff;
   text-align: center;
   padding: 0.6rem;
   border: 1px solid #04110f;
-  border-width: 6px 6px 0px 3px;
+  border-width: 6px 6px 0px 6px;
   background: #949c9d;
 }
 .location p:nth-child(1) {
@@ -157,15 +158,16 @@ header {
   }
 }
 @media (min-width: 880px) {
-  .location {
-    grid-column: 3/4;
-  }
+    .location {
+        border-width: 6px 6px 0px 3px;
+        grid-column: 3/4;
+    }
 }
 
 .legend {
-  border: 6px solid #04110f;
+  border: 6px solid #000;
   border-width: 0 6px 6px 0;
-  background: repeating-linear-gradient(90deg, transparent 0px, transparent 5px, #04110f 5px, #04110f 10px);
+  background: repeating-linear-gradient(90deg, transparent 0px, transparent 5px, #fff 5px, #fff 10px);
 }
 .languages {
   background: unset;
@@ -192,7 +194,7 @@ header {
 
 .legend__item {
   display: block;
-  background: #e2dccc;
+  background: #fff;
 }
 .languages .legend__item {
   display: block;
@@ -227,7 +229,7 @@ header {
   color: #2f2f2f;
 }
 .legend__item:nth-child(1) {
-  color: #fff;
+  color: #000;
 }
 .legend__item:nth-child(1) i {
   background: #fff;
@@ -448,9 +450,9 @@ header {
 
 .menu-download {
   display: block;
-  background: #6f7bd0;
+  background: #000;
   text-align: center;
-  color: #e2dccc;
+  color: #fff;
   text-transform: uppercase;
   font-family: Syncopate;
   font-weight: 700;
