@@ -106,14 +106,22 @@ header {
   font-size: 1.3rem;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
-  text-align: center;
   line-height: 1.1;
+  align-items: start;
+  text-align: start;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
+
+div.opening-hours div span.hours-day {
+  font-weight: bolder;
+}
+
 @media (min-width: 550px) {
   .opening-hours {
     grid-column: span 2;
     border-width: 6px 6px 0 0;
+    padding-top: 4em;
   }
 }
 @media (min-width: 880px) {
